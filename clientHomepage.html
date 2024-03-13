@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en" ng-app="phonecatApp">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>360 interiors</title>
+
+        <!--to add the favicon-->
+        <link rel="icon" type="image/png" href="img/logo_ver2-removebg-preview.png">
+        <link rel="stylesheet" href="unifiedstyle.css">
+        <link rel="stylesheet" href="clientStyle.css" />
+        <style>
+            body {
+                background-image: linear-gradient(180deg,
+                    rgba(100,100 , 40, 0.75),
+                    rgba(0, 0, 0, 0)
+                    ,rgba(0, 0, 0, 0)), url("img/livingroom.jpg");
+
+            }
+        </style>
+
+    </head>
+    <body>
+        <header>
+            <h1>Client Homepage</h1>
+
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="clientHomepage.html">Client Homepage</a></li>
+
+                <!--<li class="breadcrumb-item"><a href='clientHomepage.html'>Client Homepage</a></li>-->
+            </ul>  
+        </header>
+
+        <P class="WelcomeMassage"> Welcome Sarah</p>
+
+
+        <a class="logout" href="index.html">logout</a>
+
+        <!--The client’s information (first name, last name, and email address).-->
+        <ul class="welcometInfo" style="list-style: none;">
+            <li> Sarah Ahmed</li>
+            <li>Sarah@gmail.com</li>
+        </ul>
+
+        <div class="table">
+            <!--A table of all designers available in the system-->
+            <table class="myTable">
+
+
+                <form id="fillterForm">
+                    <select name="DesignCatagory" id="DesignCatagory">
+                        <option id="all">all</option>
+                        <option id="Country">Country</option>
+                        <option id="Modern">Modern</option>
+                        <option id="Coastal">Coastal</option>
+                        <option id="Minimalist">Minimalist</option>
+                        <option id="Bohemian">Bohemian</option>
+                    </select>
+
+
+                    <button name="filter" id="filter">filter</button>
+                </form>
+                <caption>Interior Designer</caption>
+                <tr>
+                    <!--the designer’s logo with brand name-->
+                    <th>Designer</th>
+
+                    <!--the designer’s specialty in interior design categories-->
+                    <th>Specialty</th>
+
+                    <!--a link to request a design consultation--> 
+                </tr>
+
+                <tr>
+
+                    <td><a href="designerPortfolio.html">Dana Alomar<br><img src="img/download.png"></a></td>
+                    <td>Modern, Country</td>
+                    <td><a href="requestConsultation.html">Request Design Consultation</a></td>
+                </tr>
+
+            </table></div>
+
+        <!--A table of all the previous design consultation requests that the client has made-->
+        <div class="table">
+            <table>
+                <caption>Previous Design Consultation Requests</caption>
+
+                <tr>
+                    <th>Designer</th>
+                    <th>Room</th>
+                    <th>Dimensions</th>
+                    <th>Design Category </th>
+                    <th>color Preference </th>
+                    <th>request Date </th>
+
+                    <th>Design Consultation </th>
+                </tr>
+
+                <tr>
+                    <td>Dana Alomar<br><img src="img/download.png"></td>
+                    <td>Living Room</td>
+                    <td>4x5m</td>
+                    <td>Modern</td>
+                    <td>Beige and Green</td>
+                    <td>9/1/2024</td>
+                    <td>Pending Consultation</td>
+                </tr>
+
+                <tr>
+                    <td>Sama Khaled<br><img src="img/SamaLogo.jpg"></td>
+                    <td>Bedroom</td>
+                    <td>3x4m</td>
+                    <td>Coastal</td>
+                    <td>Blue and White</td>
+                    <td>7/1/2024</td>
+                    <td><img src="img/consultationImg.jpg"></td>
+                </tr>
+
+                <tr>
+                    <td>Yomna Saad<br><img src="img/YomnaLogo.jpg"></td>
+                    <td>Kitchen</td>
+                    <td>3x3m</td>
+                    <td>Minimalist</td>
+                    <td>Black and White</td>
+                    <td>5/1/2024</td>
+                    <td>Consultation Declined</td>
+                </tr>
+            </table>
+        </div>
+
+        <footer class="footer">
+            <p>Email: <a href="mailto:contact@360interiors.com">contact@360interiors.com</a></p>
+            <p>&copy; 2024 360Interiors. All rights reserved.</p>
+            <a href="https://instagram.com/yourusername" target="_blank">Instagram</a>
+            <a href="https://example.com/youraccount" target="_blank">X Account</a>
+        </footer>
+    </body>
+</html>

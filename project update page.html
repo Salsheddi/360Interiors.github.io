@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Update project</title>
+    <link rel="icon" type="image/png" href="img/logo_ver2-removebg-preview.png">
+    <link rel="stylesheet" href="unifiedstyle.css">
+    <link rel="stylesheet" href="projectPage.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+<header>
+    <h1>Project update page</h1>
+
+    <ul class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item"><a href="DesignerHomePage.html">Designer Homepage</a></li>
+        <li class="breadcrumb-item"><a href="project update page.html">Project Update</a></li>
+
+    </ul>
+</header>
+
+<form action="DesignerHomePage.html" method="post" enctype="multipart/form-data" class="projectAddform">
+
+    <div class="form-group">
+        <label for="projectName">Project Name</label><br>
+        <input type="text" id="projectName" name="projectName" class="input" value="Sun House">
+    </div>
+    <div class="form-group">
+        <label for="projectImage">Project Image</label><br>
+        <input type="file" id="projectImage" name="projectImage">
+    </div>
+    <div class="form-group">
+        <label for="designCategory">Design Category</label><br>
+        <select id="designCategory" name="designCategory">
+            <option selected>Country</option>
+            <option>Modern</option>
+            <option>Coastal</option>
+            <option>Minimalist</option>
+            <option>Bohemian</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="projectDescription">Description</label><br>
+        <textarea id="projectDescription" name="projectDescription" class="input">Rustic white sun house that has many green plants and windows with a country style.</textarea>
+    </div>
+    <input type="submit" value="Update project">
+</form>
+
+<footer class="footer">
+    <p>Email: <a href="mailto:contact@360interiors.com">contact@360interiors.com</a></p>
+    <p>&copy; 2024 360Interiors. All rights reserved.</p>
+    <a href="https://instagram.com/yourusername" target="_blank">Instagram</a>
+    <a href="https://example.com/youraccount" target="_blank">X Account</a>
+</footer>
+</body>
+</html>
+

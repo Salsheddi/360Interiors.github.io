@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>360 interiors</title>
+
+    <!--to add the favicon-->
+    <link rel="icon" type="image/png" href="img/logo_ver2-removebg-preview.png">
+    <link rel="stylesheet" href="unifiedstyle.css">
+
+    <link rel="stylesheet" href="clientStyle.css"/>
+    <script src=".js"></script>
+    <style>
+        body {
+            background-image: linear-gradient(180deg,
+            rgba(100, 100, 40, 0.9),
+            rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url("img/consultation.jpg");
+
+        }
+
+
+    </style>
+</head>
+<body>
+<header>
+    <h1>Request A Consultation</h1>
+    <ul class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item"><a href='clientHomepage.html'>Client Homepage</a></li>
+        <li class="breadcrumb-item"><a href='requestConsultation.html'>Consultation Request</a></li>
+        <!--<li class="breadcrumb-item"><a href='requestConsultation.html'>Request Consultation</a></li>-->
+    </ul>
+</header>
+<form id="ConsultationForm">
+    <label for="roomType">room type:</label><br>
+    <select id="roomType">
+        <option>living Room</option>
+        <option>bedroom</option>
+        <option>kitchen</option>
+        <option>dining Room</option>
+        <option>guest Room</option>
+    </select><br>
+
+    <br><label>room dimensions(in meter):
+    <br>width:<input type="text" name="width" value="4">
+    <br>length:<input type="text" name="length" value="5">
+</label><br>
+
+
+    <label for="DesignCatagory">Design category:</label>
+    <select name="DesignCatagory" id="DesignCatagory">
+        <option selected>Country</option>
+        <option>Modern</option>
+        <option>Coastal</option>
+        <option>Minimalist</option>
+        <option>Bohemian</option>
+    </select>
+    <br>
+    <label>Color preferences: <input type="text" name="colorPreference" value="Beige and green"></label>
+    <br>
+    <label>Date: <input type="date"></label>
+    <br>
+    <label for="ConsultationBox">Consultation:</label><br>
+    <textarea id="ConsultationBox">Write your consultation here</textarea>
+    <br>
+    <label for="img">Upload Image:</label><br>
+    <input id="img" type="file"><br>
+
+    <br>
+    <button id="sendConsultation" onclick=""><a href="clientHomepage.html">Send</a></button>
+</form>
+
+<footer class="footer">
+    <p>Email: <a href="mailto:contact@360interiors.com">contact@360interiors.com</a></p>
+    <p>&copy; 2024 360Interiors. All rights reserved.</p>
+    <a href="https://instagram.com/yourusername" target="_blank">Instagram</a>
+    <a href="https://example.com/youraccount" target="_blank">X Account</a>
+</footer>
+</body>
+</html>
